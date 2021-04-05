@@ -1,0 +1,38 @@
+body {
+    padding-top: 150px;
+}
+
+.inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image {
+    flex-basis: 48%;
+}
+.text {
+    flex-basis: 48%;
+}
+.text h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+// レスポンシブ
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+    }
+    .image {
+        margin-bottom: 25px;
+    }
+}
